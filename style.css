@@ -15,7 +15,7 @@ input {
   position: relative;
   width: 100%;
   background-color: #fff;
-  min-height: 100vh;
+  min-height: 150vh;
   overflow: hidden;
 }
 
@@ -25,6 +25,65 @@ input {
   height: 100%;
   top: 0;
   left: 0;
+}
+
+.selection{
+  font-weight: bold;
+  color: #AAAAAA;
+  width: 100%;
+  background-color: #f0f0f0;
+  margin: 10px 0;
+  height: 55px;
+  padding-bottom: 20px;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding-left: 40px;
+  padding-top: 15px;
+  position: relative;
+}
+
+.state{
+  background-color: #f0f0f0;
+  border-left: 1px solid;
+  border-right: none;
+  border-bottom: none;
+  border-top: none;
+  border-color: #AAAAAA;
+  /* border-width: thick; */
+  text-align: center;
+  /* border: none; */
+  margin-left: 0px;
+  margin-right: 20px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.checkbox{
+  font-weight: bold;
+  display: flex;
+  color: #AAAAAA;
+  width: 100%;
+  background-color: #f0f0f0;
+  margin: 10px 0;
+  height: 75px;
+  padding-bottom: 20px;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding-left: 40px;
+  padding-top: 15px;
+  position: relative;
+}
+
+.label{
+  /* background-color: #f0f0f0; */
+  /* border-left: 1px solid; */
+  
+  justify-content: center;
+  padding-left: 30px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
 }
 
 .signin-signup {
@@ -67,7 +126,7 @@ form.sign-in-form {
 }
 
 .input-field {
-  max-width: 380px;
+  /* max-width: 380px; */
   width: 100%;
   background-color: #f0f0f0;
   margin: 10px 0;
@@ -163,8 +222,8 @@ form.sign-in-form {
 .container:before {
   content: "";
   position: absolute;
-  height: 800px;
-  width: 900px;
+  height: 1200px;
+  width: 1200px;
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
@@ -200,6 +259,9 @@ form.sign-in-form {
 }
 
 .panel .content {
+  text-align: center;
+  padding-bottom: 70px;
+  margin-right: 100px;
   color: #fff;
   transition: transform 0.9s ease-in-out;
   transition-delay: 0.6s;
@@ -208,7 +270,7 @@ form.sign-in-form {
 .panel h3 {
   font-weight: 600;
   line-height: 1;
-  font-size: 1.5rem;
+  font-size: 70px;
 }
 
 .panel p {
@@ -220,10 +282,10 @@ form.sign-in-form {
   margin: 0;
   background: none;
   border: 2px solid #fff;
-  width: 130px;
-  height: 41px;
+  width: 230px;
+  height: 51px;
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: 15px;
 }
 
 .right-panel .image,

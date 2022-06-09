@@ -8,38 +8,111 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
-    <title>Sign in & Sign up Form</title>
+    <title>Registeration</title>
   </head>
   <body>
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
           <form action="#" class="sign-in-form">
-            <h2 class="title">Sign in</h2>
+            <h2 class="title">Buyer Registeration</h2>
+            <br>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <input type="text" placeholder="Name" />
             </div>
+            <div class="input-field">
+              <i class="fa fa-building"></i>
+              <input type="text" placeholder="Company Name" />
+            </div>
+
+            <div class="input-field">
+              <i class="fa fa-mobile"></i>
+              <input type="text" placeholder="Contact Number" />
+            </div>
+
+            <div class="input-field">
+              <i class="fa fa-at"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="email" placeholder="Products Manufactured" />
+            </div>
+
+            
+
             <div class="input-field">
               <i class="fas fa-lock"></i>
               <input type="password" placeholder="Password" />
             </div>
-            <input type="submit" value="Login" class="btn solid" />
-            <p class="social-text">Or Sign in with social platforms</p>
-            <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-google"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Confirm Password" />
             </div>
+            
+            <div class="input-field">
+              <i class="fa fa-phone"></i>
+              <input type="number" placeholder="Landline" />
+            </div>
+            <div class="input-field">
+              <i class="fa fa-hashtag"></i>
+              <input type="number" placeholder="GST Number" />
+            </div>
+
+            <div class="input-field">
+              <i class="fa fa-address-book"></i>
+              <input type="text" placeholder="Address" />
+            </div>
+            <div class="selection">
+              <p>State</p>
+                        <select class="state">
+                            <option>Select State</option>
+                            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="arunachal pradesh">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Delhi">delhi</option>
+                            <option value="Daman and Diu">Daman and Diur</option>
+                            <option value="Goa">Goar</option>
+                            <option value="Gujrat">Gujrat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            <option value="Jammu and kashmir">Jammu and kashmir</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Kerela">Kerela</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Maharashtra">maharashtra</option>
+                            <option value="Manipur">manipur</option>
+                            <option value="Nagaland">nagaland</option>
+                            <option value="Odisha">odisha</option>
+                            <option value="Punjab">punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="sikkim">sikkim</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="West Bengal">West Bengal</option>
+                        </select>
+            </div>
+           
+
+            <div class="checkbox">
+              Buyer <br>Type<br><br>
+              <label for="Trader(Buyer)" class="label">
+                <span>
+                    <input type="checkbox" value="Trader" name="Seller" id="130">  Trader <br>
+                  <input type="checkbox" value="Manufacturer" name="Seller" id="131">  Manufacturer
+                </span>
+                
+              </label>
+            </div>
+           
+
+            <input type="submit" value="Register" class="btn solid" />
+            
           </form>
           <form action="#" class="sign-up-form">
             <h2 class="title">Sign up</h2>
@@ -78,13 +151,12 @@
       <div class="panels-container">
         <div class="panel left-panel">
           <div class="content">
-            <h3>New here ?</h3>
+            <h3>Seller?</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
-              ex ratione. Aliquid!
+              Register as a seller and avail our facilities and enjoy the benefits of spot trading business in one of the commodity marketplace today
             </p>
             <button class="btn transparent" id="sign-up-btn">
-              Sign up
+              Register as Seller
             </button>
           </div>
           <img src="img/log.svg" class="image" alt="" />
