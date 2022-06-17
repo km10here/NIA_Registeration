@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input {
+  font-family: "Poppins", sans-serif;
+  /* background-color: rgb(231, 201, 99); */
+}
+
+.heading{
+    margin: 40px;
+    text-align: center;
+    width:auto;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    /* background-color: rgb(188, 88, 7); */
+    min-height: 150vh;
+    overflow: hidden;
+    /* background-image: url('./img/req-bg.png'); */
+}
+
+.payment{
+    border: 5px solid;
+    border-radius: 20px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    /* background-color: gold; */
+
+}
+
+.payment h1{
+    padding-bottom: 5px;
+}
+
+.payment h4{
+    padding-bottom: 10px;
+}
+
+.form-check{
+    margin: 10px;
+    padding: 10px;
+    font-size: large;
+}
+
+.btn-btn-outline-dark{
+    padding-top: 20px;
+}
