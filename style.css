@@ -30,6 +30,23 @@ input {
 .selection{
   font-weight: bold;
   color: #AAAAAA;
+  /* width: 100%; */
+  background-color: #f0f0f0;
+  margin: 10px 0;
+  height: 55px;
+  padding-bottom: 20px;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding-left: 40px;
+  padding-top: 15px;
+  position: relative;
+  width: 98%;
+}
+
+.selection2{
+  font-weight: bold;
+  color: #AAAAAA;
   width: 100%;
   background-color: #f0f0f0;
   margin: 10px 0;
@@ -41,6 +58,7 @@ input {
   padding-left: 40px;
   padding-top: 15px;
   position: relative;
+  width: 97%;
 }
 
 .state{
@@ -59,14 +77,32 @@ input {
   font-family: "Poppins", sans-serif;
 }
 
+
 .checkbox{
   font-weight: bold;
   display: flex;
   color: #AAAAAA;
-  width: 100%;
+  width: 97%;
   background-color: #f0f0f0;
   margin: 10px 0;
   height: 75px;
+  padding-bottom: 20px;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding-left: 40px;
+  padding-top: 15px;
+  position: relative;
+}
+
+.checkbox2{
+  font-weight: bold;
+  display: flex;
+  color: #AAAAAA;
+  width: 98%;
+  background-color: #f0f0f0;
+  margin: 10px 0;
+  height: 152px;
   padding-bottom: 20px;
   border-radius: 55px;
   display: grid;
@@ -84,6 +120,14 @@ input {
   padding-left: 30px;
   font-weight: bold;
   font-family: "Poppins", sans-serif;
+}
+
+.label2{
+  height: fit-content;
+  justify-content: center;
+  padding-left: 30px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif; 
 }
 
 .signin-signup {
@@ -123,6 +167,14 @@ form.sign-in-form {
   font-size: 2.2rem;
   color: #444;
   margin-bottom: 10px;
+}
+
+.title2{
+  font-size: 2.2rem;
+  color: #444;
+  margin-bottom: 10px;
+  margin-top: 0;
+
 }
 
 .input-field {
@@ -279,7 +331,7 @@ form.sign-in-form {
 }
 
 .btn.transparent {
-  margin: 0;
+  margin-bottom: 500px;
   background: none;
   border: 2px solid #fff;
   width: 230px;
