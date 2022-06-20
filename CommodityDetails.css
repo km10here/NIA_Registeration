@@ -1,0 +1,81 @@
+.body{
+    background-color: gold;
+}
+
+.container{
+    max-width: 500px;
+    padding: none;
+    margin-top: none;
+    background-color: white;
+}
+
+.text-center{
+    background-color: gold;
+    border-radius: 90px 380px 90px 380px;
+    padding: 30px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.form-group{
+    padding:30px 30px;
+    background-color: #f0f0f0;
+    /* border-left: 1px solid; */
+    border-color: black;
+    border-right: 3px solid;
+    border-bottom: 3px solid;
+    border-top: none;
+    border-color: #AAAAAA;
+    border-radius: 20px;
+    /* border-width: thick; */
+    /* text-align: center; */
+    /* border: none; */
+    margin-left: 0px;
+    /* margin-right: 20px; */
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+
+.form-select{
+    font-weight: bold;
+  color: #AAAAAA;
+  width: 100%;
+  background-color: #f0f0f0;
+  margin: 10px 0;
+  height: 55px;
+  padding-bottom: 20px;
+  border-radius: 55px;
+  /* display: grid; */
+  /* grid-template-columns: 15% 85%; */
+  padding-left: 40px;
+  padding-top: 15px;
+  /* position: relative; */
+    /* padding: 5px; */
+    /* align-items: right; */
+}
+
+p{
+    margin: 15px;
+    /* border-bottom: solid; */
+    width:fit-content;
+    /* margin-top: 15px; */
+}
+
+.buttn {
+    width: 150px;
+    background-color: gold;
+    border: none;
+    outline: none;
+    height: 49px;
+    border-radius: 49px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .buttn:hover {
+    background-color: rgba(255, 217, 0, 0.902);
+  }
