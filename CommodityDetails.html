@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="CommodityDetails.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <title>Registeration | Commodity Details</title>
+  </head>
+
+  <body>
+    
+        </form>
+      </div>
+    </nav>
+
+    <div style="background-image: url('D:\Kartavya\JavaScript_w_projects\img.png');" class="container my-4">
+      <h1 class="text-center">Commodity Details</h1>
+
+      <br><br>
+
+      <div class="form-group">
+        <label for="Varieties"><p>Supply Varieties</p></label> 
+        <!-- <textarea class="form-control" id="description" rows="3"></textarea> -->
+        <select class="form-select" aria-label="Default select example" id="variety">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="State"><p>Supply State</p></label>
+        <!-- <textarea class="form-control" id="description" rows="3"></textarea> -->
+        <select class="form-select" aria-label="Default select example"  id="state">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="City"><p>Supply City</p></label>
+        <!-- <textarea class="form-control" id="description" rows="3"></textarea> -->
+        <select class="form-select" aria-label="Default select example"  id="city">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="quantity"><p>Weekly supply quantity</p></label>
+        <!-- <textarea class="form-control" id="description" rows="3"></textarea> -->
+        <select class="form-select" aria-label="Default select example"  id="quantity">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+<div class="form-group">
+        <label for="Month"><p>Supply Month</p></label>
+        <select class="form-select" aria-label="Default select example"  id="Month">
+          <option selected>Open this select menu</option>
+          <option value="One">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+      <button id="add" class="btn btn-primary">Add to list</button>
+      <button id="clear" class="btn btn-primary" onclick="clearStorage()">
+        Clear list
+      </button>
+<br><br>
+      <div id="items" class="my-6">
+        <p>Your Items</p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">SNo</th>
+              <th scope="col">Supply Varieties</th>
+              <th scope="col">Supply State</th>
+              <th scope="col">Supply City</th>
+              <th scope="col">Weekly Supply Qty</th>
+              <th scope="col">Supply Month</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <tr>
+              <th scope="row">1</th>
+              <td>Get some Coffee</td>
+              <td>You need coffee as you are a coder</td>
+              <td><button class="btn btn-sm btn-primary">Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <button id="add" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+
+    <!-------------------------------------JAVASCRIPT------------------------------------------->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function getAndUpdate() {
+        console.log("Updating List...");
+        
+       
+        vari = document.getElementById("variety").value;
+        state = document.getElementById("state").value;
+        city = document.getElementById("city").value; 
+        qty = document.getElementById("quantity").value;
+        mon = document.getElementById("Month").value;
+        if (localStorage.getItem("itemsJson") == null) {
+          itemJsonArray = [];
+          itemJsonArray.push([vari, state, city, qty, mon]);
+          localStorage.setItem("itemsJson", JSON.stringify(itemJsonArray));
+        } else {
+          itemJsonArrayStr = localStorage.getItem("itemsJson");
+          itemJsonArray = JSON.parse(itemJsonArrayStr);
+          itemJsonArray.push([vari, state, city, qty, mon]);
+          localStorage.setItem("itemsJson", JSON.stringify(itemJsonArray));
+        }
+        update();
+      }
+
+      function update() {
+        if (localStorage.getItem("itemsJson") == null) {
+          itemJsonArray = [];
+          localStorage.setItem("itemsJson", JSON.stringify(itemJsonArray));
+        } else {
+          itemJsonArrayStr = localStorage.getItem("itemsJson");
+          itemJsonArray = JSON.parse(itemJsonArrayStr);
+        }
+        // Populate the table
+        let tableBody = document.getElementById("tableBody");
+        let str = "";
+        itemJsonArray.forEach((element, index) => {
+          str += `
+                    <tr>
+                    <th scope="row">${index + 1}</th>
+                    <td>${element[0]}</td>
+                    <td>${element[1]}</td> 
+                    <td>${element[2]}</td> 
+                    <td>${element[3]}</td> 
+                    <td>${element[4]}</td> 
+                    <td><button class="btn btn-sm btn-primary" onclick="deleted(${index})">Delete</button></td> 
+                    </tr>`;
+        });
+        tableBody.innerHTML = str;
+      }
+      add = document.getElementById("add");
+      add.addEventListener("click", getAndUpdate);
+      update();
+      function deleted(itemIndex) {
+        console.log("Delete", itemIndex);
+        itemJsonArrayStr = localStorage.getItem("itemsJson");
+        itemJsonArray = JSON.parse(itemJsonArrayStr);
+        // Delete itemIndex element from the array
+        itemJsonArray.splice(itemIndex, 1);
+        localStorage.setItem("itemsJson", JSON.stringify(itemJsonArray));
+        update();
+      }
+      function clearStorage() {
+        if (confirm("Do you want to clear the list?")) {
+          console.log("Clearing the storage");
+          localStorage.clear();
+          update();
+        }
+      }
+    </script>
+  </body>
+</html>
