@@ -30,12 +30,12 @@
   </head>
 
   <body>
-    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffd700" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,144C384,107,480,53,576,48C672,43,768,85,864,90.7C960,96,1056,64,1152,85.3C1248,107,1344,181,1392,218.7L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
         </form>
       </div>
     </nav>
 
-    <div style="background-image: url('D:\Kartavya\JavaScript_w_projects\img.png');" class="container my-4">
+    <div class="container">
       <h1 class="text-center">Commodity Details</h1>
 
       <br><br>
@@ -92,11 +92,12 @@
           <option value="3">Three</option>
         </select>
       </div>
-      <button id="add" class="btn btn-primary">Add to list</button>
-      <button id="clear" class="btn btn-primary" onclick="clearStorage()">
+      <button id="add" class="buttn">Add to list</button>
+      <button id="clear" class="buttn" onclick="clearStorage()">
         Clear list
       </button>
 <br><br>
+
       <div id="items" class="my-6">
         <p>Your Items</p>
         <table class="table">
@@ -115,12 +116,12 @@
               <th scope="row">1</th>
               <td>Get some Coffee</td>
               <td>You need coffee as you are a coder</td>
-              <td><button class="btn btn-sm btn-primary">Delete</button></td>
+              <td><button class="btn btn-sm btn-danger">Delete</button></td>
             </tr>
           </tbody>
         </table>
 
-        <button id="add" class="btn btn-primary">Submit</button>
+        <button type="submit" value="Submit" class="buttn">Submit</button>
       </div>
     </div>
 
@@ -186,7 +187,7 @@
                     <td>${element[2]}</td> 
                     <td>${element[3]}</td> 
                     <td>${element[4]}</td> 
-                    <td><button class="btn btn-sm btn-primary" onclick="deleted(${index})">Delete</button></td> 
+                    <td><button class="btn btn-sm btn-danger" onclick="deleted(${index})">Delete</button></td> 
                     </tr>`;
         });
         tableBody.innerHTML = str;
@@ -211,5 +212,6 @@
         }
       }
     </script>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffd700" fill-opacity="1" d="M0,128L48,128C96,128,192,128,288,138.7C384,149,480,171,576,197.3C672,224,768,256,864,272C960,288,1056,288,1152,256C1248,224,1344,160,1392,128L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
   </body>
 </html>

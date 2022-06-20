@@ -38,6 +38,8 @@ input {
     border-radius: 20px;
     padding: 80px;
     border-radius: 180px 70px;
+    margin: 70px;
+    max-height: 660px;
     /* padding-left: 50px;
     padding-bottom: 30px;
     padding-top: 30px; */
