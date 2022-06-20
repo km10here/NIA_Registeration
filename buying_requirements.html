@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="Buying_requirement.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <title>Registeration | Buying Requirements</title>
+  </head>
+
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffd700" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,144C384,107,480,53,576,48C672,43,768,85,864,90.7C960,96,1056,64,1152,85.3C1248,107,1344,181,1392,218.7L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        </form>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1 class="text-center">Buying Requirements</h1>
+
+      <br><br>
+
+      <div class="form-group">
+        <label for="Varieties"><p> Varieties</p></label> 
+        <!-- <textarea class="form-control" id="description" rows="3"></textarea> -->
+        <select class="form-select" aria-label="Default select example" id="variety">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="State"><p>Delivery State</p></label>
+        <!-- <textarea class="form-control" id="description" rows="3"></textarea> -->
+        <select class="form-select" aria-label="Default select example"  id="state">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="City"><p>Delivery City</p></label>
+        <!-- <textarea class="form-control" id="description" rows="3"></textarea> -->
+        <select class="form-select" aria-label="Default select example"  id="city">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="quantity"><p>Weekly quantity required</p></label>
+        <!-- <textarea class="form-control" id="description" rows="3"></textarea> -->
+        <select class="form-select" aria-label="Default select example"  id="quantity">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+<div class="form-group">
+        <label for="Month"><p>Grade</p></label>
+        <select class="form-select" aria-label="Default select example"  id="Month">
+          <option selected>Open this select menu</option>
+          <option value="One">Grade 1</option>
+          <option value="2">Grade 2</option>
+          <option value="3">Grade 3</option>
+          <option value="3">Grade 4</option>
+        </select>
+      </div>
+     
+      <button id="add" class="buttn">Add to list</button>
+      <button id="clear" class="buttn" onclick="clearStorage()">
+        Clear list
+      </button>
+<br><br>
+
+      <div id="items" class="my-6">
+        <p>Your Items</p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">SNo</th>
+              <th scope="col">Varieties</th>
+              <th scope="col">Delivery State</th>
+              <th scope="col">Delivery City</th>
+              <th scope="col">Weekly Required Qty</th>
+              <th scope="col">Grade</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <tr>
+              <th scope="row">1</th>
+              <td>Get some Coffee</td>
+              <td>You need coffee as you are a coder</td>
+              <td><button class="btn btn-sm btn-danger">Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <h3> Payments Will Be Made</h3>
+        <label for="1">
+          <input type ="radio" value="On delivery(on quality inspection)" name="policiy" id="1"> On delivery
+      </label><br>
+      <label for="2">
+      After <input type=" text " placeholder="Days"> Days of Delivery<br><br>
+  </label><br>
+  <label>Payment Mode</label>
+                          <select class="Payment">
+                              <option>Select</option>
+                              
+                              <option value="NEFT">NEFT</option>
+                              <option value="DD/Cheque">DD/Cheque</option>
+                              </select><br><br>
+
+        <button type="submit" value="Submit" class="buttn">Submit</button>
+      </div>
+    </div>
+
+    <!-------------------------------------JAVASCRIPT------------------------------------------->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function getAndUpdate() {
+        console.log("Updating List...");
+        
+       
+        vari = document.getElementById("variety").value;
+        state = document.getElementById("state").value;
+        city = document.getElementById("city").value; 
+        qty = document.getElementById("quantity").value;
+        mon = document.getElementById("Month").value;
+        if (localStorage.getItem("itemsJson") == null) {
+          itemJsonArray = [];
+          itemJsonArray.push([vari, state, city, qty, mon]);
+          localStorage.setItem("itemsJson", JSON.stringify(itemJsonArray));
+        } else {
+          itemJsonArrayStr = localStorage.getItem("itemsJson");
+          itemJsonArray = JSON.parse(itemJsonArrayStr);
+          itemJsonArray.push([vari, state, city, qty, mon]);
+          localStorage.setItem("itemsJson", JSON.stringify(itemJsonArray));
+        }
+        update();
+      }
+
+      function update() {
+        if (localStorage.getItem("itemsJson") == null) {
+          itemJsonArray = [];
+          localStorage.setItem("itemsJson", JSON.stringify(itemJsonArray));
+        } else {
+          itemJsonArrayStr = localStorage.getItem("itemsJson");
+          itemJsonArray = JSON.parse(itemJsonArrayStr);
+        }
+        // Populate the table
+        let tableBody = document.getElementById("tableBody");
+        let str = "";
+        itemJsonArray.forEach((element, index) => {
+          str += `
+                    <tr>
+                    <th scope="row">${index + 1}</th>
+                    <td>${element[0]}</td>
+                    <td>${element[1]}</td> 
+                    <td>${element[2]}</td> 
+                    <td>${element[3]}</td> 
+                    <td>${element[4]}</td> 
+                    <td><button class="btn btn-sm btn-danger" onclick="deleted(${index})">Delete</button></td> 
+                    </tr>`;
+        });
+        tableBody.innerHTML = str;
+      }
+      add = document.getElementById("add");
+      add.addEventListener("click", getAndUpdate);
+      update();
+      function deleted(itemIndex) {
+        console.log("Delete", itemIndex);
+        itemJsonArrayStr = localStorage.getItem("itemsJson");
+        itemJsonArray = JSON.parse(itemJsonArrayStr);
+        // Delete itemIndex element from the array
+        itemJsonArray.splice(itemIndex, 1);
+        localStorage.setItem("itemsJson", JSON.stringify(itemJsonArray));
+        update();
+      }
+      function clearStorage() {
+        if (confirm("Do you want to clear the list?")) {
+          console.log("Clearing the storage");
+          localStorage.clear();
+          update();
+        }
+      }
+    </script>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffd700" fill-opacity="1" d="M0,128L48,128C96,128,192,128,288,138.7C384,149,480,171,576,197.3C672,224,768,256,864,272C960,288,1056,288,1152,256C1248,224,1344,160,1392,128L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+  </body>
+</html>
